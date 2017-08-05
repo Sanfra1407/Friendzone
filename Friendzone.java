@@ -28,12 +28,12 @@ public class Friendzone {
 
     public static void checkFriendzone(int answer)
     {
-        if(answer < 1 || answer > 5){
+        if (answer < 1 || answer > 5) {
             System.out.println("\nPlease insert a correct number!\n");
             friendzoneREPL();
         }
-        else{
-            switch (answer){
+        else {
+            switch (answer) {
                 case 1:
                     friendzoned("YOU HAVE BEEN VERY FRIENDZONED!");
                     break;
@@ -56,14 +56,14 @@ public class Friendzone {
     private static void friendzoned(String friendzone)
     {
         boolean ok = false;
-        while(ok != true){
+        while (ok != true) {
             System.out.println("\n" + friendzone);
             System.out.println("\nDid you understand?");
             System.out.println("1) Yes");
             System.out.print("Enter your answer: ");
             int understood = input.nextInt();
 
-            if(understood == 1) {
+            if (understood == 1) {
                 ok = true;
             }
         }
